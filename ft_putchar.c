@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ggomes-v <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ggomes-v <ggomes-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/11 14:10:35 by marvin            #+#    #+#             */
-/*   Updated: 2024/11/11 14:10:35 by marvin           ###   ########.fr       */
+/*   Created: 2024/11/11 14:10:35 by ggomes-v          #+#    #+#             */
+/*   Updated: 2024/11/13 11:40:19 by ggomes-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int     ft_putchar(int c)
+int	ft_putchar(int c)
 {
-    return (write(1, &c, 1));
+	return (write(1, &c, 1));
 }
