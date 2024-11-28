@@ -1,10 +1,10 @@
-# 📢 ft_printf
+# 📢 | ft_printf
 
 Welcome to the **ft_printf** project! This is a custom implementation of the famous `printf` function from the C standard library. It's designed as part of the **42 School Curriculum**, focusing on understanding variadic functions, handling edge cases, and mastering output formatting.
 
 ---
 
-## 📖 Table of Contents
+## 📖 | Table of Contents
 
 1. [📚 About the Project](#-about-the-project)
 2. [⚙️ Features](#%EF%B8%8F-features)
@@ -17,7 +17,7 @@ Welcome to the **ft_printf** project! This is a custom implementation of the fam
 
 ---
 
-## 📚 About the Project
+## 📚 | About the Project
 
 The `ft_printf` project is a replica of the standard `printf` function, written in C from scratch. It showcases:
 - 📜 Mastery of **variadic functions**.
@@ -28,7 +28,7 @@ This project is a foundational exercise in understanding how low-level I/O opera
 
 ---
 
-## ⚙️ Features
+## ⚙️ | Features
 
 - 🎯 Custom implementation of `printf`.
 - 📊 Full support for common format specifiers.
@@ -37,7 +37,7 @@ This project is a foundational exercise in understanding how low-level I/O opera
 
 ---
 
-## 🛠️ How It Works
+## 🛠️ | How It Works
 
 At its core, `ft_printf` leverages **variadic arguments** through `stdarg.h` to process an arbitrary number of inputs. The function parses the format string, detects specifiers, and calls appropriate handlers for output formatting.
 
@@ -51,25 +51,25 @@ int main() {
 }
 ```
 ---
-## 🚀 Usage
+## 🚀 | Usage
 
 This section explains how to clone, build, and use the `ft_printf` library in your projects. Follow the steps below to integrate it into your work.
 
-### 1️⃣ Clone the Repository
+### 1️⃣ | Clone the Repository
 
 Start by cloning the repository from GitHub:
 ```bash
 git clone https://github.com/<your-username>/<your-repo-name>.git
 cd <your-repo-name>
 ```
-### 2️⃣ Build the Library
+### 2️⃣ | Build the Library
 Use the provided Makefile to compile the project and generate the static library file libftprintf.a:
 ```bash
 make
 ```
 This will compile all necessary files and create the library for linking.
 ---
-### 3️⃣ Include in Your Project
+### 3️⃣ | Include in Your Project
 
 Add the ft_printf library to your C project. Include the header file in your code as shown below:
 ```c
@@ -81,7 +81,7 @@ int main() {
 }
 ```
 ---
-### 4️⃣ Compile Your Program
+### 4️⃣ | Compile Your Program
 
 When compiling your program, link the libftprintf.a static library. Example:
 
@@ -89,7 +89,7 @@ gcc main.c libftprintf.a -o my_program
 
 Replace main.c with the name of your source file(s).
 ---
-### 5️⃣ Run Your Program
+### 5️⃣ | Run Your Program
 
 Execute the compiled program:
 
@@ -105,3 +105,38 @@ You should see the custom ft_printf output in the terminal.
 gcc main.c another_file.c libftprintf.a -o my_program
 
 Ensure you have a compatible Makefile in the root directory to simplify the build process.
+---
+### 🏗️ | Supported Conversions
+
+    Characters: %c
+    Strings: %s
+    Integers: %d, %i
+    Unsigned Integers: %u
+    Hexadecimal: %x, %X
+    Pointers: %p
+    Percentage: %%
+
+### 📊 | Performance
+
+The implementation is optimized for:
+
+    Memory efficiency.
+    Output speed.
+    Compatibility with edge cases (e.g., null pointers, invalid format strings).
+
+### 📸 | Screenshots
+
+🖼️ Add a screenshot here to showcase your program in action!
+
+### 🙌 | Acknowledgments
+
+A huge thank you to:
+
+    🏫 42 School for designing such challenging and rewarding projects.
+    💻 Open-source contributors for inspiration and support.
+
+### 🌟 | Final Notes
+
+ft_printf is an exciting journey into the heart of C programming. It not only strengthens your grasp on low-level I/O but also pushes you to think about optimization and error handling.
+
+Feel free to contribute, fork, or suggest improvements! 🚀
