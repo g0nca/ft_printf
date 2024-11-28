@@ -7,10 +7,10 @@ Welcome to the **ft_printf** project! This is a custom implementation of the fam
 ## 📖 Table of Contents
 
 1. [📚 About the Project](#-about-the-project)
-2. [⚙️ Features](#️-features)
-3. [🛠️ How It Works](#️-how-it-works)
+2. [⚙️ Features](#%EF%B8%8F-features)
+3. [🛠️ How It Works](#%EF%B8%8F-how-it-works)
 4. [🚀 Usage](#-usage)
-5. [🏗️ Supported Conversions](#️-supported-conversions)
+5. [🏗️ Supported Conversions](#%EF%B8%8F-supported-conversions)
 6. [📊 Performance](#-performance)
 7. [📸 Screenshots](#-screenshots)
 8. [🙌 Acknowledgments](#-acknowledgments)
@@ -43,6 +43,65 @@ At its core, `ft_printf` leverages **variadic arguments** through `stdarg.h` to 
 
 ### Example Breakdown:
 ```c
-ft_printf("Hello %s, you are %d years old.\n", "Alice", 25);
+#include "ft_printf.h"
 
+int main() {
+    ft_printf("Hello %s, you are %d years old.\n", "Alice", 25);
+    return (0);
+}
+```
+---
+## 🚀 Usage
 
+This section explains how to clone, build, and use the `ft_printf` library in your projects. Follow the steps below to integrate it into your work.
+
+### 1️⃣ Clone the Repository
+
+Start by cloning the repository from GitHub:
+```bash
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
+```
+### 2️⃣ Build the Library
+Use the provided Makefile to compile the project and generate the static library file libftprintf.a:
+```bash
+make
+```
+This will compile all necessary files and create the library for linking.
+---
+### 3️⃣ Include in Your Project
+
+Add the ft_printf library to your C project. Include the header file in your code as shown below:
+```c
+#include "ft_printf.h"
+
+int main() {
+    ft_printf("This is a custom printf: %d\n", 42);
+    return (0);
+}
+```
+---
+### 4️⃣ Compile Your Program
+
+When compiling your program, link the libftprintf.a static library. Example:
+
+gcc main.c libftprintf.a -o my_program
+
+Replace main.c with the name of your source file(s).
+---
+### 5️⃣ Run Your Program
+
+Execute the compiled program:
+
+./my_program
+
+You should see the custom ft_printf output in the terminal.
+---
+⚠️ Notes and Placeholders
+
+    Replace <your-username> and <your-repo-name> in the clone step with your actual GitHub details.
+    If you're using additional source files in your project, list them all when compiling, for example:
+
+gcc main.c another_file.c libftprintf.a -o my_program
+
+Ensure you have a compatible Makefile in the root directory to simplify the build process.
