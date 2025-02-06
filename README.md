@@ -85,7 +85,7 @@ int main() {
 
 When compiling your program, link the libftprintf.a static library. Example:
 
-gcc main.c libftprintf.a -o my_program
+cc main.c libftprintf.a -o ft_printf
 
 Replace main.c with the name of your source file(s).
 ---
@@ -93,16 +93,10 @@ Replace main.c with the name of your source file(s).
 
 Execute the compiled program:
 
-./my_program
+./ft_printf
 
 You should see the custom ft_printf output in the terminal.
 ---
-⚠️ Notes and Placeholders
-
-    Replace <your-username> and <your-repo-name> in the clone step with your actual GitHub details.
-    If you're using additional source files in your project, list them all when compiling, for example:
-
-gcc main.c another_file.c libftprintf.a -o my_program
 
 Ensure you have a compatible Makefile in the root directory to simplify the build process.
 ---
@@ -123,10 +117,6 @@ The implementation is optimized for:
     Memory efficiency.
     Output speed.
     Compatibility with edge cases (e.g., null pointers, invalid format strings).
-
-### 📸 | Screenshots
-
-🖼️ Add a screenshot here to showcase your program in action!
 
 ### 🙌 | Acknowledgments
 
